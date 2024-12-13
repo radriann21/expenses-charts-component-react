@@ -17,6 +17,16 @@ export const MainComponent = () => {
         <h1 className="font-bold text-lg sm:text-2xl text-neutral-dark-brown">Spending - Last 7 days</h1>
         <ChartsComponent />
         <Divider />
+        <section className="flex items-center justify-between">
+          <div>
+            <span className="text-sm text-neutral-medium-brown">Total this month</span>
+            <span className="block text-lg sm:text-2xl md:text-3xl font-bold text-neutral-dark-brown">$478.33</span>
+          </div>
+          <div className="text-right text-sm">
+            <span className="text-neutral-dark-brown font-bold">+2.4%</span>
+            <span className="block text-neutral-medium-brown">from last month</span>
+          </div>
+        </section>
       </section>
     </article>
   )
