@@ -7,7 +7,7 @@ export const ChartsComponent = () => {
     <ResponsiveContainer height={180}>
       <BarChart data={data}>
         <XAxis dataKey="day" />
-        <Tooltip content={<CustomTooltip />} />
+        <Tooltip content={<CustomTooltip payload={[]} label={""} active={false} />} />
         <Bar dataKey="amount" fill="#8884d8" />
       </BarChart>
     </ResponsiveContainer>
