@@ -1,6 +1,10 @@
+import { MainComponent } from "./components/MainComponent"
+
 function App() {
   return (
-    <h1 className="font-global text-3xl font-semibold">Hello World</h1>
+    <main className="max-w-full min-h-screen bg-neutral-cream flex items-center justify-center">
+      <MainComponent />
+    </main>
   )
 }
 
