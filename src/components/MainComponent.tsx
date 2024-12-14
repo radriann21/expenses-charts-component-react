@@ -1,8 +1,12 @@
 import logo from "../assets/icons/logo.svg"
+import data from "../data.json"
 import { ChartsComponent } from "./ChartsComponent"
 import { Divider } from "./Divider"
 
 export const MainComponent = () => {
+
+  const maxAmount = Math.max(...data.map((entry: DataProps) => entry.amount));
+
   return (
     <article className="w-full md:w-[420px] h-fit flex flex-col">
       <section className="w-full bg-primary-soft-red flex justify-between items-center p-6 rounded-md">
@@ -15,7 +19,7 @@ export const MainComponent = () => {
 
       <section className="mt-4 p-6 rounded-md bg-neutral-very-pale-orange">
         <h1 className="font-bold text-lg sm:text-2xl text-neutral-dark-brown">Spending - Last 7 days</h1>
-        <ChartsComponent />
+        <ChartsComponent data={data} maxAmount={maxAmount} />
         <Divider />
         <section className="flex items-center justify-between">
           <div>

@@ -10,3 +10,11 @@ type CustomTooltipProps = {
   label: string | number;
   active: boolean;
 }
+
+type ChartsComponentProps = {
+  data: {
+    day: string;
+    amount: number;
+  }[],
+  maxAmount: number;
+}
